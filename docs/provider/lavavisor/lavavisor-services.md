@@ -33,7 +33,7 @@ LavaVisor `init` command initializes the environment for LavaVisor. It is genera
     
 `--auto-download` - automatically downloads missing binaries
     
-`--auto-start` - automatically issues `start` after the the `init` command completes
+`--auto-start` - automatically issues `start` after the `init` command completes
 
 **Example usage:**
 
@@ -45,7 +45,7 @@ lavavisor init --auto-download --chain-id lava-testnet-2
 <br />
 
 ### > `lavavisor create-service` 
-LavaVisor uses service files for each provider/consumer at play. LavaVisor `create-service` command creates these  files according to the supplied consumer / provider config file and flags.
+LavaVisor uses service files for each provider/consumer at play. LavaVisor `create-service` command creates these  files according to the supplied consumer/provider config file and flags.
 
 You must specify whether you are creating a `provider` or `consumer` and the location of the config file.
 
@@ -84,7 +84,7 @@ LavaVisor starts the specified services using the linked binary. It also starts 
     
     - `lavavisor create-service provider /home/ubuntu/config/provider1-LAV1.yml --geolocation 1 --from servicer2 --log_level info --keyring-backend test --chain-id lava-testnet-2 --node https://public-rpc-testnet2.lavanet.xyz:443/rpc/`
 
-4. Check the `~/.lavavisor/` dir and validate `config.yml` . It should look like this (adjust the service names according to your process):
+4. Check the `~/.lavavisor/` dir and validate `config.yml`. It should look like this (adjust the service names according to your process):
 
 
 ```yaml
